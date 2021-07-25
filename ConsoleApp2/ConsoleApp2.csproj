@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="msyh.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="msyh.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="8.1.0" />
+    <PackageReference Include="Magick.NET.Core" Version="8.1.0" />
+  </ItemGroup>
+
+</Project>
